@@ -5,6 +5,8 @@ body{
 
 header{
     padding: 46px 100px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 1);
 }
 
 .header__wrapper{
@@ -58,9 +60,6 @@ header{
     background: rgba(85, 59, 51, 1);
 }
 
-.welcome-section{
-    background: rgba(255, 255, 255, 0.5);
-}
 
 
 .welcome-heading{
@@ -78,6 +77,7 @@ header{
 
 .search-btns{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 48px;
     gap: 24px;
 }
@@ -116,12 +116,54 @@ header{
 .welcome-section__wrapper{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.welcome-section__product img{
+.welcome-section__product{
+    width: 522px;
+    height: 709px;
+    background-image: url(../images/sofa.png);
     position: relative;
 }
 
+.sofa-price{
+    margin-top: 413px;
+    margin-left: 48px;
+    width: 93px;
+    height: 52px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(47, 36, 31, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
 
+.sofa-name{
+    color: rgba(255, 255, 255, 1);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+    margin-left: 48px;
+    margin-top: 8px;
+}
+
+.view-details-btn{
+    width: 197px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(47, 36, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 48px;
+    margin-top: 16px;
+}
+
+.view-details-btn img{
+    margin-left: 16px;
+}
 
 
