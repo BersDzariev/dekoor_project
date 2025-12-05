@@ -1,0 +1,60 @@
+body{
+    font-family: "Inter", sans-serif; 
+}
+
+
+header{
+    padding: 46px 100px;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dekoor-icon{
+    display: flex;
+    align-items: center;
+    gap: 12.7px;
+}
+
+.dekoor-icon-text{
+    font-size: 30px;
+    color: rgba(47, 36, 31, 1);
+    font-weight: 800;
+}
+
+.nav-list{
+    display: flex;
+    gap: 64px;
+}
+
+.nav-link{
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -1%;
+    text-align: left;
+}
+
+.header-btns{
+    display: flex;
+    gap: 16px;
+}
+
+.sign-in_btn{
+    width: 107px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(229, 240, 182, 1);
+}
+
+.cart-btn{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(85, 59, 51, 1);
+}
