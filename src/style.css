@@ -59,7 +59,7 @@ header{
 }
 
 .welcome-section{
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -107,6 +107,21 @@ header{
     box-sizing: border-box;
     border: 1px solid rgba(85, 59, 51, 1);
     border-radius: 12px;
+    color: rgba(85, 59, 51, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
 }
+
+.welcome-section__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-section__product img{
+    position: relative;
+}
+
+
 
 
