@@ -75,3 +75,38 @@ header{
     padding-top: 160px;
     padding-left: 142px;
 }
+
+.search-btns{
+    display: flex;
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.search-catalog_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 344px;
+    height: 80px;
+    border-radius: 12px;
+    background: rgba(229, 240, 182, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(85, 59, 51, 1);
+}
+
+.watch-video_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 344px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid rgba(85, 59, 51, 1);
+    border-radius: 12px;
+}
+
+
