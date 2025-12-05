@@ -1,2 +1,27 @@
-/* font-family: "Inter", sans-serif; */
+body{
+    font-family: "Inter", sans-serif; 
+}
 
+
+header{
+    padding: 46px 100px;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dekoor-icon{
+    display: flex;
+    align-items: center;
+    gap: 12.7px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.header-btns{
+    display: flex;
+}
