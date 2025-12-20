@@ -171,3 +171,63 @@ header {
   height: 486px;
   background-color: rgba(47, 36, 31, 1);
 }
+
+.why-choose_wrapper{
+  padding-top: 72px;
+  padding-left: 222px;
+}
+
+.why-choose_heading{
+  color: rgba(229, 240, 182, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.why-choose-text{
+  margin-top: 40px;
+  color: rgba(229, 240, 182, 1);
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+.our-achievements_wrapper{
+  display: flex;
+  margin-top: 40px;
+  gap: 64px;
+}
+
+.achievement{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.achievement-text{
+  color: rgba(229, 240, 182, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.white-magnifier-icon, .bag-icon{
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(229, 240, 182, 0.5);
+}
+.five-icon{
+  padding: 3px 13px;
+  border-radius: 8px;
+  background: rgba(229, 240, 182, 0.5);
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
