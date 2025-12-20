@@ -231,3 +231,38 @@ header {
   line-height: 36px;
   text-align: center;
 }
+
+.our-partners{
+  margin-top: 80px;
+}
+
+.our-partners_wrapper{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-of-partners{
+  color: rgba(47, 36, 31, 1);
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 116px;
+  letter-spacing: -5%;
+  text-align: left;
+}
+
+.partnered-brands{
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.brands{
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
