@@ -469,3 +469,59 @@ a {
   margin-top: 8px;
   margin-left: 24px;
 }
+
+.limited-deals{
+  background: rgba(252, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42;
+  padding: 80px 142px 80px 142px;
+}
+
+
+.limited-deals_heading{
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.limited-deals_subtitle{
+  color: rgba(47, 36, 31, 1);
+  font-style: Bold;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-top: 42px;
+}
+
+.email-input_wrapper{
+  display: flex;
+  margin-top: 42px;
+}
+
+.email-input{
+  width: 503px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8;
+  padding: 22px 36px 22px 36px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.email-wrapper{
+  width: 80px;
+  height: 80px;
+  padding: 28px;
+  background: rgba(229, 240, 182, 1);
+  border-radius: 0px 10px 10px 0px;
+}
