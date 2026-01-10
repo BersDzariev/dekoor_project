@@ -282,6 +282,7 @@ a {
 
 .categories{
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 
@@ -360,4 +361,111 @@ a {
 .categories_item_wrapper:hover .category-title {
   opacity: 1;
   transition: 3s ease;
+}
+
+.our-products{
+  background: rgba(47, 36, 31, 1);
+}
+
+.our-products-heading_wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-left: 143px;
+}
+
+.our-products_heading{
+  color: rgba(229, 240, 182, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.best-seller-text{
+  color: rgba(229, 240, 182, 1);
+  font-style: Bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.our-products_btn{
+  width: 153px;
+  height: 52px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 36px 10px 36px;
+  border-radius: 12px;
+  background: rgba(229, 240, 182, 1);
+  margin-right: 142px;
+}
+
+.best-sellers{
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  gap: 36px;
+}
+
+
+.best-sellers img{
+  width: 300px;
+  height: 400px;
+}
+
+.orange-sofa{
+  width: 354px;
+  height: 472px;
+  background-image: url(../images/orange-sofa.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel-arrows{
+  display: flex;
+  gap: 36px;
+  justify-content: flex-end;
+  padding-right: 141px;
+  padding-bottom: 56px;
+}
+
+.carousel-arrow{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8;
+  padding: 16px;
+  border-radius: 62px;
+  background: rgba(229, 240, 182, 1);
+}
+
+.orange-sofa-price{
+  width: 93px;
+  height: 52px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 318px;
+  margin-left: 24px;
+}
+
+.orange-sofa-name{
+  color: rgba(255, 255, 255, 1);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  margin-top: 8px;
+  margin-left: 24px;
 }
