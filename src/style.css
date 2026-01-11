@@ -525,3 +525,68 @@ a {
   background: rgba(229, 240, 182, 1);
   border-radius: 0px 10px 10px 0px;
 }
+
+footer{
+  padding: 93px 100px 93px 100px;
+}
+
+.footer-dekoor-icon{
+  display: flex;
+  align-items: center;
+}
+
+.footer-dekoor-icon img{
+  width: 29px;
+  height: 29px;
+}
+
+.footer-dekoor-icon-text{
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.about-company{
+  margin-top: 28.5px;
+  color: rgba(102, 112, 133, 1);
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.copyright{
+  color: rgba(102, 112, 133, 1);
+  margin-top: 69px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us{
+  display: flex;
+  gap: 52px;
+}
+
+
+.footer-link{
+  display: block;
+  margin-top: 30px;
+  color:  rgba(102, 112, 133, 1);
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
