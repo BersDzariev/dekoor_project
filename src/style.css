@@ -5,7 +5,21 @@ body {
 header {
   padding: 46px 100px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
-  background: rgba(255, 255, 255, 1);
+  background: var(--second-white);
+}
+
+:root{
+  --light-brown: rgba(129, 114, 83, 1);
+  --second-brown: rgba(85, 59, 51, 1);
+  --brown: rgba(47, 36, 31, 1);
+  --black: rgba(0, 0, 0, 1);
+  --light-green: rgba(229, 240, 182, 1);
+  --transparent-green: rgba(229, 240, 182, 0.5);
+  --white: rgba(252, 250, 250, 1);
+  --second-white: rgba(255, 255, 255, 1);
+  --transparent-white: rgba(255, 255, 255, 0.5);
+  --gray: rgba(102, 112, 133, 1);
+
 }
 
 .header__wrapper {
@@ -22,7 +36,7 @@ header {
 
 .dekoor-icon-text {
   font-size: 30px;
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-weight: 800;
 }
 
@@ -32,7 +46,7 @@ header {
 
 
 a {
-  color: rgba(0, 0, 0, 1);
+  color: var(--black);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -51,14 +65,14 @@ a {
   width: 107px;
   height: 48px;
   border-radius: 8px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
 }
 
 .cart-btn {
   width: 48px;
   height: 48px;
   border-radius: 8px;
-  background: rgba(85, 59, 51, 1);
+  background: var(--second-brown);
 }
 
 .welcome-heading {
@@ -89,11 +103,11 @@ a {
   width: 344px;
   height: 80px;
   border-radius: 12px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  color: rgba(85, 59, 51, 1);
+  color: var(--second-brown);
   text-transform: uppercase;
 }
 
@@ -105,9 +119,9 @@ a {
   width: 344px;
   height: 80px;
   box-sizing: border-box;
-  border: 1px solid rgba(85, 59, 51, 1);
+  border: 1px solid var(--second-brown);
   border-radius: 12px;
-  color: rgba(85, 59, 51, 1);
+  color: var(--second-brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -134,15 +148,15 @@ a {
   height: 52px;
   padding: 8px 16px 8px 16px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.5);
-  color: rgba(47, 36, 31, 1);
+  background: var(--transparent-white);
+  color: var(--brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
 
 .sofa-name {
-  color: rgba(255, 255, 255, 1);
+  color: var(--second-white);
   font-size: 64px;
   font-weight: 400;
   line-height: 77px;
@@ -154,8 +168,8 @@ a {
   width: 197px;
   height: 56px;
   border-radius: 12px;
-  background: rgba(47, 36, 31, 1);
-  color: rgba(255, 255, 255, 1);
+  background: var(--brown);
+  color: var(--second-white);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -171,7 +185,7 @@ a {
 .why-choose{
   width: 100%;
   height: 486px;
-  background-color: rgba(47, 36, 31, 1);
+  background-color: var(--brown);
 }
 
 .why-choose_wrapper{
@@ -180,7 +194,7 @@ a {
 }
 
 .why-choose_heading{
-  color: rgba(229, 240, 182, 1);
+  color: var(--light-green);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -189,7 +203,7 @@ a {
 
 .why-choose-text{
   margin-top: 40px;
-  color: rgba(229, 240, 182, 1);
+  color: var(--light-green);
   font-family: Inter;
   font-size: 64px;
   font-weight: 700;
@@ -210,13 +224,13 @@ a {
   .white-magnifier-icon, .bag-icon{
   padding: 8px;
   border-radius: 8px;
-  background: rgba(229, 240, 182, 0.5);
+  background: var(--transparent-green);
 }
 
 }
 
 .achievement-text{
-  color: rgba(229, 240, 182, 1);
+  color: var(--light-green);
   font-family: Inter;
   font-size: 24px;
   font-weight: 700;
@@ -228,8 +242,8 @@ a {
 .five-icon{
   padding: 3px 13px;
   border-radius: 8px;
-  background: rgba(229, 240, 182, 0.5);
-  color: rgba(255, 255, 255, 1);
+  background: var(--transparent-green);
+  color: var(--second-white);
   font-family: Inter;
   font-size: 24px;
   font-weight: 700;
@@ -240,7 +254,7 @@ a {
 .our-partners{
   padding-top: 80px;
   padding-bottom: 80px;
-  background: rgba(252, 250, 250, 1);
+  background: var(--white);
 }
 
 .our-partners_wrapper{
@@ -252,7 +266,7 @@ a {
 
 .number-of-partners_wrapper{
   .number-of-partners{
-    color: rgba(47, 36, 31, 1);
+    color: var(--brown);
     font-family: Inter;
     font-size: 96px;
     font-weight: 700;
@@ -262,7 +276,7 @@ a {
   }
 
   .partnered-brands{
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -296,7 +310,7 @@ a {
 }
 
 .categories_heading{
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -307,7 +321,7 @@ a {
 .categories_subtitle{
   margin-left: 48px;
   margin-top: 32px;
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-style: Bold;
   font-size: 48px;
   font-weight: 700;
@@ -323,12 +337,12 @@ a {
   margin-left: 48px;
   width: 433px;
   height: 62px;
-  background: rgba(252, 250, 250, 1);
+  background: var(--white);
   transition: 1.1s ease, background-color 0.5s ease;
 }
 
 .category-name{
-  color: rgba(0, 0, 0, 1);
+  color: var(--black);
   font-style: Bold;
   font-size: 18px;
   font-weight: 700;
@@ -339,7 +353,7 @@ a {
 }
 
 .category-title{
-  color: rgba(0, 0, 0, 1);
+  color: var(--black);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -354,7 +368,7 @@ a {
 .categories_item_wrapper:hover {
   width: 433px;
   height: 121px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
 }
 
 /* Показываем текст при наведении */
@@ -364,7 +378,7 @@ a {
 }
 
 .our-products{
-  background: rgba(47, 36, 31, 1);
+  background: var(--brown);
 }
 
 .our-products-heading_wrapper{
@@ -375,7 +389,7 @@ a {
 }
 
 .our-products_heading{
-  color: rgba(229, 240, 182, 1);
+  color: var(--light-green);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -384,7 +398,7 @@ a {
 }
 
 .best-seller-text{
-  color: rgba(229, 240, 182, 1);
+  color: var(--light-green);
   font-style: Bold;
   font-size: 48px;
   font-weight: 700;
@@ -401,7 +415,7 @@ a {
   align-items: center;
   padding: 10px 36px 10px 36px;
   border-radius: 12px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
   margin-right: 142px;
 }
 
@@ -444,7 +458,7 @@ a {
   gap: 8;
   padding: 16px;
   border-radius: 62px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
 }
 
 .orange-sofa-price{
@@ -452,8 +466,8 @@ a {
   height: 52px;
   padding: 8px 16px 8px 16px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.5);
-  color: rgba(47, 36, 31, 1);
+  background: var(--transparent-white);
+  color: var(--brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -462,7 +476,7 @@ a {
 }
 
 .orange-sofa-name{
-  color: rgba(255, 255, 255, 1);
+  color: var(--second-white);
   font-size: 48px;
   font-weight: 400;
   line-height: 58px;
@@ -471,7 +485,7 @@ a {
 }
 
 .limited-deals{
-  background: rgba(252, 250, 250, 1);
+  background: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -482,7 +496,7 @@ a {
 
 
 .limited-deals_heading{
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -491,7 +505,7 @@ a {
 }
 
 .limited-deals_subtitle{
-  color: rgba(47, 36, 31, 1);
+  color: var(--brown);
   font-style: Bold;
   font-size: 64px;
   font-weight: 700;
@@ -513,7 +527,7 @@ a {
   align-items: flex-start;
   gap: 8;
   padding: 22px 36px 22px 36px;
-  background: rgba(255, 255, 255, 1);
+  background: var(--second-white);
   border-radius: 10px 0px 0px 10px;
 
 }
@@ -522,7 +536,7 @@ a {
   width: 80px;
   height: 80px;
   padding: 28px;
-  background: rgba(229, 240, 182, 1);
+  background: var(--light-green);
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -547,7 +561,7 @@ footer{
 
 .about-company{
   margin-top: 28.5px;
-  color: rgba(102, 112, 133, 1);
+  color: var(--gray);
   font-family: Inter;
   font-style: Regular;
   font-size: 16px;
@@ -558,7 +572,7 @@ footer{
 }
 
 .copyright{
-  color: rgba(102, 112, 133, 1);
+  color: var(--gray);
   margin-top: 69px;
   font-size: 16px;
   font-weight: 400;
@@ -581,7 +595,7 @@ footer{
 .footer-link{
   display: block;
   margin-top: 30px;
-  color:  rgba(102, 112, 133, 1);
+  color:  var(--gray);
   font-family: Inter;
   font-style: Regular;
   font-size: 16px;
