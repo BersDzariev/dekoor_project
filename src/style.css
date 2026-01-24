@@ -29,15 +29,17 @@ header {
 .nav-list {
   display: flex;
   gap: 64px;
-}
 
-.nav-link {
+
+a {
   color: rgba(0, 0, 0, 1);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -1%;
   text-align: left;
+}
+
 }
 
 .header-btns {
@@ -164,4 +166,427 @@ header {
 
 .view-details-btn img {
   margin-left: 16px;
+}
+
+.why-choose{
+  width: 100%;
+  height: 486px;
+  background-color: rgba(47, 36, 31, 1);
+}
+
+.why-choose_wrapper{
+  padding-top: 72px;
+  padding-left: 222px;
+}
+
+.why-choose_heading{
+  color: rgba(229, 240, 182, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.why-choose-text{
+  margin-top: 40px;
+  color: rgba(229, 240, 182, 1);
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+.our-achievements_wrapper{
+  display: flex;
+  margin-top: 40px;
+  gap: 64px;
+}
+
+.achievement{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .white-magnifier-icon, .bag-icon{
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(229, 240, 182, 0.5);
+}
+
+}
+
+.achievement-text{
+  color: rgba(229, 240, 182, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+.five-icon{
+  padding: 3px 13px;
+  border-radius: 8px;
+  background: rgba(229, 240, 182, 0.5);
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.our-partners{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: rgba(252, 250, 250, 1);
+}
+
+.our-partners_wrapper{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-of-partners_wrapper{
+  .number-of-partners{
+    color: rgba(47, 36, 31, 1);
+    font-family: Inter;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: -5%;
+    text-align: left;
+  }
+
+  .partnered-brands{
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+}
+
+
+
+
+
+.brands{
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+
+.categories{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+.categories__wrapper{
+  display: flex;
+  padding-top: 80px;
+}
+
+.categories_images img{
+  margin-right: 24px;
+}
+
+.categories_heading{
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1%;
+  margin-left: 48px;
+}
+
+.categories_subtitle{
+  margin-left: 48px;
+  margin-top: 32px;
+  color: rgba(47, 36, 31, 1);
+  font-style: Bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -1%;
+}
+
+.main-categories-list{
+  margin-top: 32px;
+}
+
+.categories_item_wrapper{
+  margin-left: 48px;
+  width: 433px;
+  height: 62px;
+  background: rgba(252, 250, 250, 1);
+  transition: 1.1s ease, background-color 0.5s ease;
+}
+
+.category-name{
+  color: rgba(0, 0, 0, 1);
+  font-style: Bold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -1%;
+  padding-top: 20px;
+  padding-left: 16px;
+}
+
+.category-title{
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  padding-top: 12px;
+  padding-left: 16px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+
+.categories_item_wrapper:hover {
+  width: 433px;
+  height: 121px;
+  background: rgba(229, 240, 182, 1);
+}
+
+/* Показываем текст при наведении */
+.categories_item_wrapper:hover .category-title {
+  opacity: 1;
+  transition: 3s ease;
+}
+
+.our-products{
+  background: rgba(47, 36, 31, 1);
+}
+
+.our-products-heading_wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-left: 143px;
+}
+
+.our-products_heading{
+  color: rgba(229, 240, 182, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.best-seller-text{
+  color: rgba(229, 240, 182, 1);
+  font-style: Bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.our-products_btn{
+  width: 153px;
+  height: 52px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 36px 10px 36px;
+  border-radius: 12px;
+  background: rgba(229, 240, 182, 1);
+  margin-right: 142px;
+}
+
+.best-sellers{
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  gap: 36px;
+}
+
+
+.best-sellers img{
+  width: 300px;
+  height: 400px;
+}
+
+.orange-sofa{
+  width: 354px;
+  height: 472px;
+  background-image: url(../images/orange-sofa.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel-arrows{
+  display: flex;
+  gap: 36px;
+  justify-content: flex-end;
+  padding-right: 141px;
+  padding-bottom: 56px;
+}
+
+.carousel-arrow{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8;
+  padding: 16px;
+  border-radius: 62px;
+  background: rgba(229, 240, 182, 1);
+}
+
+.orange-sofa-price{
+  width: 93px;
+  height: 52px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 318px;
+  margin-left: 24px;
+}
+
+.orange-sofa-name{
+  color: rgba(255, 255, 255, 1);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+.limited-deals{
+  background: rgba(252, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42;
+  padding: 80px 142px 80px 142px;
+}
+
+
+.limited-deals_heading{
+  color: rgba(47, 36, 31, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.limited-deals_subtitle{
+  color: rgba(47, 36, 31, 1);
+  font-style: Bold;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-top: 42px;
+}
+
+.email-input_wrapper{
+  display: flex;
+  margin-top: 42px;
+}
+
+.email-input{
+  width: 503px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8;
+  padding: 22px 36px 22px 36px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.email-wrapper{
+  width: 80px;
+  height: 80px;
+  padding: 28px;
+  background: rgba(229, 240, 182, 1);
+  border-radius: 0px 10px 10px 0px;
+}
+
+footer{
+  padding: 93px 100px 93px 100px;
+}
+
+.footer-dekoor-icon{
+  display: flex;
+  align-items: center;
+}
+
+.footer-dekoor-icon img{
+  width: 29px;
+  height: 29px;
+}
+
+.footer-dekoor-icon-text{
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.about-company{
+  margin-top: 28.5px;
+  color: rgba(102, 112, 133, 1);
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.copyright{
+  color: rgba(102, 112, 133, 1);
+  margin-top: 69px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us{
+  display: flex;
+  gap: 52px;
+}
+
+
+.footer-link{
+  display: block;
+  margin-top: 30px;
+  color:  rgba(102, 112, 133, 1);
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
 }

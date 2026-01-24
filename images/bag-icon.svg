@@ -1,0 +1,5 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="24.000000" fill="none">
+	<rect id="work_outline" width="24.000000" height="24.000000" x="0.000000" y="0.000000" />
+	<path id="Vector" d="M0 0L24 0L24 24L0 24L0 0Z" fill-rule="nonzero" />
+	<path id="Vector" d="M14 6L14 4L10 4L10 6L14 6ZM4 9L4 18C4 18.55 4.45 19 5 19L19 19C19.55 19 20 18.55 20 18L20 9C20 8.45 19.55 8 19 8L5 8C4.45 8 4 8.45 4 9ZM20 6C21.11 6 22 6.89 22 8L22 19C22 20.11 21.11 21 20 21L4 21C2.89 21 2 20.11 2 19L2.01 8C2.01 6.89 2.89 6 4 6L8 6L8 4C8 2.89 8.89 2 10 2L14 2C15.11 2 16 2.89 16 4L16 6L20 6Z" fill="rgb(244,244,244)" fill-rule="nonzero" />
+</svg>
