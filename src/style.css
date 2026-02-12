@@ -8,7 +8,7 @@ header {
   background: var(--second-white);
 }
 
-:root{
+:root {
   --light-brown: rgba(129, 114, 83, 1);
   --second-brown: rgba(85, 59, 51, 1);
   --brown: rgba(47, 36, 31, 1);
@@ -19,7 +19,6 @@ header {
   --second-white: rgba(255, 255, 255, 1);
   --transparent-white: rgba(255, 255, 255, 0.5);
   --gray: rgba(102, 112, 133, 1);
-
 }
 
 .header__wrapper {
@@ -44,16 +43,14 @@ header {
   display: flex;
   gap: 64px;
 
-
-a {
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -1%;
-  text-align: left;
-}
-
+  a {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -1%;
+    text-align: left;
+  }
 }
 
 .header-btns {
@@ -73,6 +70,11 @@ a {
   height: 48px;
   border-radius: 8px;
   background: var(--second-brown);
+}
+
+.burger {
+  padding-top: 10px;
+  display: none;
 }
 
 .welcome-heading {
@@ -182,18 +184,18 @@ a {
   margin-left: 16px;
 }
 
-.why-choose{
+.why-choose {
   width: 100%;
   height: 486px;
   background-color: var(--brown);
 }
 
-.why-choose_wrapper{
+.why-choose_wrapper {
   padding-top: 72px;
   padding-left: 222px;
 }
 
-.why-choose_heading{
+.why-choose_heading {
   color: var(--light-green);
   font-size: 24px;
   font-weight: 400;
@@ -201,7 +203,7 @@ a {
   text-transform: uppercase;
 }
 
-.why-choose-text{
+.why-choose-text {
   margin-top: 40px;
   color: var(--light-green);
   font-family: Inter;
@@ -210,26 +212,26 @@ a {
   line-height: 77px;
 }
 
-.our-achievements_wrapper{
+.our-achievements_wrapper {
   display: flex;
   margin-top: 40px;
   gap: 64px;
 }
 
-.achievement{
+.achievement {
   display: flex;
   align-items: center;
   gap: 16px;
 
-  .white-magnifier-icon, .bag-icon{
-  padding: 8px;
-  border-radius: 8px;
-  background: var(--transparent-green);
+  .white-magnifier-icon,
+  .bag-icon {
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--transparent-green);
+  }
 }
 
-}
-
-.achievement-text{
+.achievement-text {
   color: var(--light-green);
   font-family: Inter;
   font-size: 24px;
@@ -238,8 +240,7 @@ a {
   text-transform: uppercase;
 }
 
-
-.five-icon{
+.five-icon {
   padding: 3px 13px;
   border-radius: 8px;
   background: var(--transparent-green);
@@ -251,21 +252,21 @@ a {
   text-align: center;
 }
 
-.our-partners{
+.our-partners {
   padding-top: 80px;
   padding-bottom: 80px;
   background: var(--white);
 }
 
-.our-partners_wrapper{
+.our-partners_wrapper {
   display: flex;
   justify-content: center;
   justify-content: space-around;
   align-items: center;
 }
 
-.number-of-partners_wrapper{
-  .number-of-partners{
+.number-of-partners_wrapper {
+  .number-of-partners {
     color: var(--brown);
     font-family: Inter;
     font-size: 96px;
@@ -275,41 +276,36 @@ a {
     text-align: left;
   }
 
-  .partnered-brands{
-  color: var(--brown);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  text-transform: uppercase;
+  .partnered-brands {
+    color: var(--brown);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
 }
-}
 
-
-
-
-
-.brands{
+.brands {
   display: flex;
   align-items: center;
   gap: 88px;
 }
 
-.categories{
+.categories {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-
-.categories__wrapper{
+.categories__wrapper {
   display: flex;
   padding-top: 80px;
 }
 
-.categories_images img{
+.categories_images img {
   margin-right: 24px;
 }
 
-.categories_heading{
+.categories_heading {
   color: var(--brown);
   font-size: 24px;
   font-weight: 400;
@@ -318,7 +314,7 @@ a {
   margin-left: 48px;
 }
 
-.categories_subtitle{
+.categories_subtitle {
   margin-left: 48px;
   margin-top: 32px;
   color: var(--brown);
@@ -329,19 +325,21 @@ a {
   letter-spacing: -1%;
 }
 
-.main-categories-list{
+.main-categories-list {
   margin-top: 32px;
 }
 
-.categories_item_wrapper{
+.categories_item_wrapper {
   margin-left: 48px;
   width: 433px;
   height: 62px;
   background: var(--white);
-  transition: 1.1s ease, background-color 0.5s ease;
+  transition:
+    1.1s ease,
+    background-color 0.5s ease;
 }
 
-.category-name{
+.category-name {
   color: var(--black);
   font-style: Bold;
   font-size: 18px;
@@ -352,7 +350,7 @@ a {
   padding-left: 16px;
 }
 
-.category-title{
+.category-title {
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -363,7 +361,6 @@ a {
   opacity: 0;
   transition: 0.5s ease;
 }
-
 
 .categories_item_wrapper:hover {
   width: 433px;
@@ -377,18 +374,18 @@ a {
   transition: 3s ease;
 }
 
-.our-products{
+.our-products {
   background: var(--brown);
 }
 
-.our-products-heading_wrapper{
+.our-products-heading_wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
   padding-left: 143px;
 }
 
-.our-products_heading{
+.our-products_heading {
   color: var(--light-green);
   font-size: 24px;
   font-weight: 400;
@@ -397,7 +394,7 @@ a {
   text-align: left;
 }
 
-.best-seller-text{
+.best-seller-text {
   color: var(--light-green);
   font-style: Bold;
   font-size: 48px;
@@ -407,7 +404,7 @@ a {
   text-align: left;
 }
 
-.our-products_btn{
+.our-products_btn {
   width: 153px;
   height: 52px;
   display: flex;
@@ -419,20 +416,19 @@ a {
   margin-right: 142px;
 }
 
-.best-sellers{
+.best-sellers {
   display: flex;
   justify-content: center;
   padding-top: 48px;
   gap: 36px;
 }
 
-
-.best-sellers img{
+.best-sellers img {
   width: 300px;
   height: 400px;
 }
 
-.orange-sofa{
+.orange-sofa {
   width: 354px;
   height: 472px;
   background-image: url(../images/orange-sofa.png);
@@ -440,7 +436,7 @@ a {
   position: relative;
 }
 
-.carousel-arrows{
+.carousel-arrows {
   display: flex;
   gap: 36px;
   justify-content: flex-end;
@@ -448,7 +444,7 @@ a {
   padding-bottom: 56px;
 }
 
-.carousel-arrow{
+.carousel-arrow {
   width: 56px;
   height: 56px;
   display: flex;
@@ -461,7 +457,7 @@ a {
   background: var(--light-green);
 }
 
-.orange-sofa-price{
+.orange-sofa-price {
   width: 93px;
   height: 52px;
   padding: 8px 16px 8px 16px;
@@ -475,7 +471,7 @@ a {
   margin-left: 24px;
 }
 
-.orange-sofa-name{
+.orange-sofa-name {
   color: var(--second-white);
   font-size: 48px;
   font-weight: 400;
@@ -484,7 +480,7 @@ a {
   margin-left: 24px;
 }
 
-.limited-deals{
+.limited-deals {
   background: var(--white);
   display: flex;
   flex-direction: column;
@@ -494,8 +490,7 @@ a {
   padding: 80px 142px 80px 142px;
 }
 
-
-.limited-deals_heading{
+.limited-deals_heading {
   color: var(--brown);
   font-size: 24px;
   font-weight: 400;
@@ -504,7 +499,7 @@ a {
   text-align: left;
 }
 
-.limited-deals_subtitle{
+.limited-deals_subtitle {
   color: var(--brown);
   font-style: Bold;
   font-size: 64px;
@@ -513,12 +508,12 @@ a {
   margin-top: 42px;
 }
 
-.email-input_wrapper{
+.email-input_wrapper {
   display: flex;
   margin-top: 42px;
 }
 
-.email-input{
+.email-input {
   width: 503px;
   height: 80px;
   display: flex;
@@ -529,10 +524,9 @@ a {
   padding: 22px 36px 22px 36px;
   background: var(--second-white);
   border-radius: 10px 0px 0px 10px;
-
 }
 
-.email-wrapper{
+.email-wrapper {
   width: 80px;
   height: 80px;
   padding: 28px;
@@ -540,26 +534,26 @@ a {
   border-radius: 0px 10px 10px 0px;
 }
 
-footer{
+footer {
   padding: 93px 100px 93px 100px;
 }
 
-.footer-dekoor-icon{
+.footer-dekoor-icon {
   display: flex;
   align-items: center;
 }
 
-.footer-dekoor-icon img{
+.footer-dekoor-icon img {
   width: 29px;
   height: 29px;
 }
 
-.footer-dekoor-icon-text{
+.footer-dekoor-icon-text {
   font-weight: bold;
   margin-left: 7px;
 }
 
-.about-company{
+.about-company {
   margin-top: 28.5px;
   color: var(--gray);
   font-family: Inter;
@@ -571,7 +565,7 @@ footer{
   text-align: left;
 }
 
-.copyright{
+.copyright {
   color: var(--gray);
   margin-top: 69px;
   font-size: 16px;
@@ -581,21 +575,20 @@ footer{
   text-align: left;
 }
 
-.footer__wrapper{
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.contact-us{
+.contact-us {
   display: flex;
   gap: 52px;
 }
 
-
-.footer-link{
+.footer-link {
   display: block;
   margin-top: 30px;
-  color:  var(--gray);
+  color: var(--gray);
   font-family: Inter;
   font-style: Regular;
   font-size: 16px;
@@ -603,4 +596,39 @@ footer{
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+@media (max-width: 1125px) {
+  header {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 975px) {
+  .nav-list {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .dekoor-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .dekoor-icon-text {
+    font-size: 23px;
+  }
+
+  .burger {
+    padding-top: 4px;
+  }
+
+  .header-btns button {
+    display: none;
+  }
 }
