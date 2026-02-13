@@ -97,13 +97,16 @@ header {
   gap: 24px;
 }
 
+.search-btns button{
+  width: 344px;
+  height: 80px;
+}
+
 .search-catalog_btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 344px;
-  height: 80px;
   border-radius: 12px;
   background: var(--light-green);
   font-size: 24px;
@@ -118,8 +121,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 344px;
-  height: 80px;
   box-sizing: border-box;
   border: 1px solid var(--second-brown);
   border-radius: 12px;
