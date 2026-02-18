@@ -78,16 +78,17 @@ header {
 }
 
 .welcome-heading {
-  font-size: 72px;
+  max-width: 712px;
+  font-size: clamp(32px, 5vw, 72px);
   font-weight: 800;
-  line-height: 87px;
   letter-spacing: -1%;
   text-align: left;
 }
 
 .welcome-section__main {
-  padding-top: 160px;
+  padding-top: clamp(32px, 11.1vw, 160px);
   padding-left: 142px;
+  padding-right: 16px;
 }
 
 .search-btns {
@@ -97,19 +98,29 @@ header {
   gap: 24px;
 }
 
-.search-btns button{
+.search-btns button {
   width: 344px;
   height: 80px;
 }
 
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+.play-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .search-catalog_btn {
+  padding: clamp(24px, 2.5vw, 36px) clamp(16px, 1.5vw, 22px);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   border-radius: 12px;
   background: var(--light-green);
-  font-size: 24px;
+  font-size: clamp(14px, 1.6vw, 24px);
   font-weight: 400;
   line-height: 36px;
   color: var(--second-brown);
@@ -117,6 +128,7 @@ header {
 }
 
 .watch-video_btn {
+  padding: clamp(24px, 2.5vw, 36px) clamp(16px, 1.5vw, 22px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,22 +137,24 @@ header {
   border: 1px solid var(--second-brown);
   border-radius: 12px;
   color: var(--second-brown);
-  font-size: 24px;
+  font-size: clamp(14px, 1.6vw, 24px);
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 .welcome-section__wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .welcome-section__product {
   width: 522px;
-  height: 709px;
+  min-height: 709px;
   background-image: url(../images/sofa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -186,19 +200,24 @@ header {
 }
 
 .why-choose {
+  display: flex;
   width: 100%;
-  height: 486px;
+  min-height: 486px;
   background-color: var(--brown);
 }
 
 .why-choose_wrapper {
-  padding-top: 72px;
-  padding-left: 222px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: clamp(20px, 9.4vw, 220px);
+  padding-right: 20px;
 }
 
 .why-choose_heading {
   color: var(--light-green);
-  font-size: 24px;
+  font-size: clamp(14px, 2.6vw, 24px);
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
@@ -208,15 +227,16 @@ header {
   margin-top: 40px;
   color: var(--light-green);
   font-family: Inter;
-  font-size: 64px;
+  font-size: clamp(24px, 4.4vw, 64px);
   font-weight: 700;
-  line-height: 77px;
+  max-width: 1156px;
 }
 
 .our-achievements_wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
-  gap: 64px;
+  gap: clamp(16px, 4.4vw, 64px);
 }
 
 .achievement {
@@ -233,11 +253,11 @@ header {
 }
 
 .achievement-text {
+  max-width: 290px;
   color: var(--light-green);
   font-family: Inter;
-  font-size: 24px;
+  font-size: clamp(15px, 1.6vw, 24px);
   font-weight: 700;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -254,13 +274,14 @@ header {
 }
 
 .our-partners {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: clamp(24px, 5.5vw, 80px);
+  padding-bottom: clamp(40px, 5.5vw, 80px);
   background: var(--white);
 }
 
 .our-partners_wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
   align-items: center;
@@ -270,18 +291,17 @@ header {
   .number-of-partners {
     color: var(--brown);
     font-family: Inter;
-    font-size: 96px;
+    font-size: clamp(24px, 9.6vw, 96px);
     font-weight: 700;
-    line-height: 116px;
     letter-spacing: -5%;
     text-align: left;
   }
 
   .partnered-brands {
     color: var(--brown);
-    font-size: 24px;
+    font-size: clamp(14px, 2vw, 24px);
     font-weight: 400;
-    line-height: 29px;
+    margin-top: clamp(4px, 0.6vw, 10px);
     text-transform: uppercase;
   }
 }
@@ -289,7 +309,7 @@ header {
 .brands {
   display: flex;
   align-items: center;
-  gap: 88px;
+  gap: clamp(39px, 8.1vw, 88px);
 }
 
 .categories {
@@ -297,9 +317,34 @@ header {
   padding-bottom: 80px;
 }
 
+.gusto-logo {
+  width: clamp(48px, 9.2vw, 105px);
+  height: auto;
+}
+
+.stripe-logo {
+  width: clamp(40px, 8vw, 85px);
+  height: auto;
+}
+
+.treehouse-logo {
+  width: clamp(82px, 14.3vw, 178px);
+  height: auto;
+}
+
+.upwork-logo {
+  width: clamp(57px, 10.5vw, 123.5px);
+  height: auto;
+}
+
 .categories__wrapper {
   display: flex;
+  justify-content: space-between;
   padding-top: 80px;
+}
+
+.categories_list {
+  padding-right: 143px;
 }
 
 .categories_images img {
@@ -316,6 +361,7 @@ header {
 }
 
 .categories_subtitle {
+  max-width: 434px;
   margin-left: 48px;
   margin-top: 32px;
   color: var(--brown);
@@ -352,6 +398,7 @@ header {
 }
 
 .category-title {
+  max-width: 385px;
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -501,6 +548,7 @@ header {
 }
 
 .limited-deals_subtitle {
+  max-width: 1156px;
   color: var(--brown);
   font-style: Bold;
   font-size: 64px;
@@ -555,6 +603,7 @@ footer {
 }
 
 .about-company {
+  max-width: 504px;
   margin-top: 28.5px;
   color: var(--gray);
   font-family: Inter;
@@ -603,6 +652,34 @@ footer {
   header {
     padding: 25px;
   }
+  .welcome-section__product {
+    display: none;
+  }
+
+  .welcome-heading {
+    text-align: center;
+  }
+
+  .welcome-section__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .welcome-section__main {
+    padding-top: clamp(32px, 11.1vw, 160px);
+    padding-left: clamp(16px, 1.5vw, 142px);
+  }
+
+  .search-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-btns button {
+    width: clamp(282px, 23.9vw, 344px);
+    height: clamp(56px, 5.5vw, 80px);
+  }
 }
 
 @media (max-width: 975px) {
@@ -615,7 +692,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .dekoor-icon img {
     width: 32px;
     height: 32px;
@@ -629,7 +706,35 @@ footer {
     padding-top: 4px;
   }
 
-  .header-btns button {
+  .sign-in_btn {
     display: none;
+  }
+
+  .cart-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cart-btn img {
+    width: 20px;
+    height: auto;
+  }
+
+  .brands {
+    margin-top: 24px;
+  }
+
+  .number-of-partners {
+    display: flex;
+    justify-content: center;
+  }
+
+  .why-choose_heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .why-choose-text {
+    text-align: center;
   }
 }
