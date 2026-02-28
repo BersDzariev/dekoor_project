@@ -625,7 +625,7 @@ header {
 }
 
 footer {
-  padding: 93px 100px 93px 100px;
+  padding: clamp(36px, 2.5vw, 93px) clamp(37px, 7vw, 100px) clamp(80px, 5.5vw, 93px) clamp(37px, 7vw, 100px);
 }
 
 .footer-dekoor-icon {
@@ -649,7 +649,7 @@ footer {
   color: var(--gray);
   font-family: Inter;
   font-style: Regular;
-  font-size: 16px;
+  font-size: clamp(12px, 1.2vw, 16px);
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
@@ -661,19 +661,22 @@ footer {
   margin-top: 69px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .contact-us {
   display: flex;
+  flex-wrap: wrap;
   gap: 52px;
+}
+
+.footer-item{
+  font-size: clamp(14px, 14vw, 20px);
 }
 
 .footer-link {
@@ -682,11 +685,9 @@ footer {
   color: var(--gray);
   font-family: Inter;
   font-style: Regular;
-  font-size: 16px;
+  font-size: clamp(12px, 1.2vw, 16px);
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
+  white-space: nowrap;
 }
 
 @media (max-width: 1465px) {
@@ -834,6 +835,28 @@ footer {
 
   .email-input_wrapper{
     justify-content: center
+  }
+
+  .footer__wrapper{
+    justify-content: center;
+  }
+
+  .about-company{
+    text-align: center;
+  }
+
+  .contact-us{
+    justify-content: center;
+    margin-top: 35px;
+  }
+  
+
+  .footer-dekoor-icon{
+    justify-content: center;
+  }
+
+  .copyright{
+    display: none;
   }
 }
 
