@@ -68,11 +68,15 @@ header {
   gap: 16px;
 }
 
-.sign-in_btn {
+.sign-up_btn {
   width: 107px;
   height: 48px;
   border-radius: 8px;
   background: var(--light-green);
+}
+
+.mobile-sign-up {
+  display: none;
 }
 
 .cart-btn {
@@ -83,9 +87,51 @@ header {
 }
 
 .burger {
-  padding-top: 10px;
+  position: relative;
+  width: 20px;
   display: none;
 }
+
+.burger span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  background-color: var(--black);
+  transition: all 0.3s;
+}
+
+.burger span:nth-child(1) {
+  top: -6px;
+  width: 10px;
+}
+
+.burger span:nth-child(2) {
+  width: 20px;
+}
+
+.burger span:nth-child(3) {
+  top: 6px;
+  width: 15px;
+}
+
+.burger.active span:nth-child(1) {
+  top: 6px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+
 
 .welcome-heading {
   max-width: 712px;
@@ -574,14 +620,13 @@ header {
   background: var(--white);
   display: flex;
   flex-direction: column;
-  padding: clamp(32px, 5.5vw, 80px) clamp(16px, 9.9vw, 142px) ;
+  padding: clamp(32px, 5.5vw, 80px) clamp(16px, 9.9vw, 142px);
 }
 
 .limited-deals_heading {
   color: var(--brown);
   font-size: clamp(14px, 3.6vw, 24px);
   font-weight: 400;
-
 }
 
 .limited-deals_subtitle {
@@ -614,18 +659,19 @@ header {
 .email-button-wrapper {
   min-width: 13px;
   min-height: 10px;
-  padding: clamp(12px, 2vw, 28px) ;
+  padding: clamp(12px, 2vw, 28px);
   background: var(--light-green);
   border-radius: 0px 10px 10px 0px;
 }
 
-.email-icon{
+.email-icon {
   min-width: 20px;
   height: auto;
 }
 
 footer {
-  padding: clamp(36px, 2.5vw, 93px) clamp(37px, 7vw, 100px) clamp(80px, 5.5vw, 93px) clamp(37px, 7vw, 100px);
+  padding: clamp(36px, 2.5vw, 93px) clamp(37px, 7vw, 100px)
+    clamp(80px, 5.5vw, 93px) clamp(37px, 7vw, 100px);
 }
 
 .footer-dekoor-icon {
@@ -675,7 +721,7 @@ footer {
   gap: 52px;
 }
 
-.footer-item{
+.footer-item {
   font-size: clamp(14px, 14vw, 20px);
 }
 
@@ -795,11 +841,62 @@ footer {
 }
 
 @media (max-width: 975px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  .off-screen-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--white);
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-out;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .off-screen-menu.active {
+    transform: translateY(0);
+  }
+
+  nav {
+    padding-top: 100px;
+  }
+
   .nav-list {
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav-list a {
+    font-size: 30px;
+  }
+
+  .sign-up_btn {
     display: none;
   }
 
+  .mobile-sign-up {
+    margin-top: 30px;
+    margin-left: -20px;
+    width: 220px;
+    display: block;
+  }
+
   .burger {
+    z-index: 1000;
+    display: block;
+  }
+
+  .burger.active {
     display: block;
   }
 
@@ -829,33 +926,32 @@ footer {
     text-align: center;
   }
 
-  .limited-deals_subtitle{
+  .limited-deals_subtitle {
     text-align: center;
   }
 
-  .email-input_wrapper{
-    justify-content: center
-  }
-
-  .footer__wrapper{
+  .email-input_wrapper {
     justify-content: center;
   }
 
-  .about-company{
+  .footer__wrapper {
+    justify-content: center;
+  }
+
+  .about-company {
     text-align: center;
   }
 
-  .contact-us{
+  .contact-us {
     justify-content: center;
     margin-top: 35px;
   }
-  
 
-  .footer-dekoor-icon{
+  .footer-dekoor-icon {
     justify-content: center;
   }
 
-  .copyright{
+  .copyright {
     display: none;
   }
 }
@@ -889,7 +985,7 @@ footer {
   }
 
   .burger {
-    padding-top: 4px;
+    margin-top: -4px;
   }
 
   .sign-in_btn {
@@ -904,10 +1000,6 @@ footer {
   .cart-btn img {
     width: 20px;
     height: auto;
-  }
-
-  .brands {
-    margin-top: px;
   }
 
   .number-of-partners {
@@ -945,7 +1037,7 @@ footer {
     bottom: 50px;
   }
 
-  .limited-deals_subtitle{
+  .limited-deals_subtitle {
     margin-top: 16px;
   }
 }

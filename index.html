@@ -17,10 +17,13 @@
 <body>
     <header>
         <div class="header__wrapper">
+
             <div class="dekoor-icon">
                 <img src="images/dekoor-logo.png" alt="logo">
                 <p class="dekoor-icon-text">Dekoor</p>
             </div>
+
+        <div class="off-screen-menu" id="off-screen-menu">
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -36,15 +39,19 @@
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <button class="sign-up_btn mobile-sign-up">Sign Up</button>
             </nav>
+            </div>
 
             <div class="header-btns">
-                <button class="sign-in_btn">Sign Up</button>
+                <button class="sign-up_btn">Sign Up</button>
                 <button class="cart-btn">
                     <img src="images/cart-icon.png" alt="cart icon">
                 </button>
-                <div class="burger">
-                    <img class="burger-icon" src="images/burger-icon.png" alt="burger">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -262,5 +269,5 @@
         </footer>
     </main>
 </body>
-
+ <script src="script.js"></script>
 </html>
